@@ -1,0 +1,295 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'favicon.png' %}" rel="icon" type="image/png">
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+            <header>
+                
+                <div class="header_inner">
+                    <h1>Welcome To Machine Learning Project </h1>
+                    <div class="right-side lg:pr-4">
+                        
+                        <!-- profile -->
+                        <li><a href="/logout" class="btn btn-primary"> Log Out</a></li>
+                        <a href="#">
+                            <img src="{{user_profile.profileimg.url}}" class="header-avatar" alt="">
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+            </header>
+
+            <div class="container m-auto">
+
+                <div class="container">
+
+                    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                <fieldset>
+                
+                <!-- Form Name -->
+                <legend>Put all the informations!</legend>
+                
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  
+                  <input  name="age" placeholder="Age" class="form-control"  type="text">
+                   
+                </div>
+
+                <div class="form-group"> 
+                    <label class="col-md-4 control-label"></label>
+                      <div class="col-md-4 selectContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                      <select name="state" class="form-control selectpicker" >
+                        <option value=" " >Please select your Sex</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        
+                      </select>
+                    </div>
+                </div>
+                
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label" ></label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="last_name" placeholder="ALB" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Text input-->
+                
+                 <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="ALP" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="ALT" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="AST" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="BIL" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="CHE" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="CHOL" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="CREA" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="GGT" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="PROT" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <!-- radio checks -->
+                 <div class="form-group">
+                                        <label class="col-md-4 control-label">Do you have Diabetes?</label>
+                                        <div class="col-md-4">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="hosting" value="yes" /> Yes
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="hosting" value="no" /> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                <!-- Text area -->
+                  
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Description</label>
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Description"></textarea>
+                  </div>
+                  </div>
+                </div>
+                
+                <!-- Success message -->
+                
+                
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label"></label>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                  </div>
+                </div>
+                
+                </fieldset>
+                </form>
+                </div>
+                    </div><!-- /.container -->
+
+                <!--<h1 class="lg:text-2xl text-lg font-extrabold leading-none text-gray-900 tracking-tight mb-5"> Feed </h1>--->
+
+                <div class="lg:flex justify-center lg:space-x-10 lg:space-y-0 space-y-5">
+
+                    <!-- left sidebar-->
+                    
+
+                    <!-- right sidebar-->
+                    <div class="lg:w-5/12">
+
+                        <div class="bg-white  shadow-md rounded-md overflow-hidden">
+
+                            
+                            
+
+                        </div>
+
+                      
+
+                    </div>
+
+                </div>               
+          
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+ <!-- Scripts
+    ================================================== -->
+    <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>  
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/uikit.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+
+    <script src="{% static '../../unpkg.com/ionicons%405.2.3/dist/ionicons.js' %}"></script>
+</body>
+
+
+</html>
