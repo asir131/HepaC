@@ -3,12 +3,35 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User,auth
 from django.contrib import messages
 from django.contrib.auth import authenticate, logout, login
-
+from .models import Profile
 from django.contrib.auth.decorators import login_required 
 
 @login_required(login_url='signin')
 def index(request):
-    return render(request,'index.html')
+    if request.method=='POST':
+        age=request.POST.get('age')
+        sex=request.POST.get('sex')
+        ALB=request.POST.get('ALB')
+        ALP=request.POST.get('ALP')
+        ALT=request.POST.get('ALT')
+        AST=request.POST.get('AST')
+        BIL=request.POST.get('BIL')
+        CHE=request.POST.get('CHE')
+        CHOL=request.POST.get('CHOL')
+        CREA=request.POST.get('CREA')
+        GGT=request.POST.get('GGT')
+        PROT=request.POST.get('PROT')
+        comment=request.POST.get('comment')
+        
+        new_profile = Profile.objects.create(age=age,sex=sex,ALB=ALB,ALP=ALP,ALT=ALT,AST=AST,BIL=BIL,CHE=CHE,CHOL=CHOL,CREA=CREA,GGT=GGT,PROT=PROT,comment=comment)
+        
+        new_profile.save()
+        
+
+    
+        return render(request,'index.html')
+    else:
+        return render(request, 'index.html')
 
 
 def signup(request):

@@ -49,7 +49,8 @@
                 <legend>Put all the informations!</legend>
                 
                 <!-- Text input-->
-                
+            <form action="" method="POST">
+                {% csrf_token %}  
                 <div class="form-group">
                   
                   <input  name="age" placeholder="Age" class="form-control"  type="text">
@@ -61,7 +62,7 @@
                       <div class="col-md-4 selectContainer">
                       <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                      <select name="state" class="form-control selectpicker" >
+                      <select name="sex" class="form-control selectpicker" >
                         <option value=" " >Please select your Sex</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -77,7 +78,7 @@
                     <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                  <input name="last_name" placeholder="ALB" class="form-control"  type="text">
+                  <input name="ALB" placeholder="ALB" class="form-control"  type="text">
                     </div>
                   </div>
                 </div>
@@ -89,7 +90,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="ALP" class="form-control"  type="text">
+                    <input name="ALP" placeholder="ALP" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -102,7 +103,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="ALT" class="form-control"  type="text">
+                    <input name="ALT" placeholder="ALT" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -115,7 +116,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="AST" class="form-control"  type="text">
+                    <input name="AST" placeholder="AST" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -128,7 +129,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="BIL" class="form-control"  type="text">
+                    <input name="BIL" placeholder="BIL" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -140,7 +141,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="CHE" class="form-control"  type="text">
+                    <input name="CHE" placeholder="CHE" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -152,20 +153,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="CHOL" class="form-control"  type="text">
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <!-- Text input-->
-                
-                <div class="form-group">
-                    <label class="col-md-4 control-label" ></label> 
-                      <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="CREA" class="form-control"  type="text">
+                    <input name="CHOL" placeholder="CHOL" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -178,7 +166,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="GGT" class="form-control"  type="text">
+                    <input name="CREA" placeholder="CREA" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -191,28 +179,26 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="PROT" class="form-control"  type="text">
+                    <input name="GGT" placeholder="GGT" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="PROT" placeholder="PROT" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
                 
                 
-                <!-- radio checks -->
-                 <div class="form-group">
-                                        <label class="col-md-4 control-label">Do you have Diabetes?</label>
-                                        <div class="col-md-4">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="hosting" value="yes" /> Yes
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="hosting" value="no" /> No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                
                 
                 <!-- Text area -->
                   
@@ -238,7 +224,7 @@
                 </div>
                 
                 </fieldset>
-                </form>
+            </form>
                 </div>
                     </div><!-- /.container -->
 
