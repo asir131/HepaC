@@ -27,6 +27,7 @@ def index(request):
         
         new_profile.save()
         
+        
 
     
         return render(request,'index.html')
