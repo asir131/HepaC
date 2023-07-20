@@ -23,37 +23,38 @@
     
             <header>
                 
-                <div class="header_inner">
+                
                     <h1>Welcome To Machine Learning Project </h1>
                     <div class="right-side lg:pr-4">
                         
                         <!-- profile -->
-                        <li><a href="/logout" class="btn btn-primary"> Log Out</a></li>
+                        <li><a href="/logout" class="btn btn-warning"> Log Out</a></li>
                         <a href="#">
                             <img src="{{user_profile.profileimg.url}}" class="header-avatar" alt="">
                         </a>
                         
                         
                     </div>
-                </div>
+                
             </header>
 
             <div class="container m-auto">
-
+              
                 <div class="container">
-
+                  <h1><legend>Put all the informations!</legend></h1>
                     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
                 <fieldset>
                 
                 <!-- Form Name -->
-                <legend>Put all the informations!</legend>
+                
                 
                 <!-- Text input-->
             <form action="" method="POST">
                 {% csrf_token %}  
+                
                 <div class="form-group">
                   
-                  <input  name="age" placeholder="Age" class="form-control"  type="text">
+                  <input  name="age" required placeholder="Age" class="form-control"  type="text">
                    
                 </div>
 
@@ -62,8 +63,8 @@
                       <div class="col-md-4 selectContainer">
                       <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                      <select name="sex" class="form-control selectpicker" >
-                        <option value=" " >Please select your Sex</option>
+                      <select name="sex" required class="form-control selectpicker" placeholder="Please select your Sex" >
+                        <option >Please select your Sex</option>
                         <option>Male</option>
                         <option>Female</option>
                         
@@ -78,7 +79,7 @@
                     <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                  <input name="ALB" placeholder="ALB" class="form-control"  type="text">
+                  <input name="ALB" required placeholder="ALB" class="form-control"  type="text">
                     </div>
                   </div>
                 </div>
@@ -90,7 +91,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="ALP" placeholder="ALP" class="form-control"  type="text">
+                    <input name="ALP" required placeholder="ALP" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -103,7 +104,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="ALT" placeholder="ALT" class="form-control"  type="text">
+                    <input name="ALT" required placeholder="ALT" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -116,7 +117,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="AST" placeholder="AST" class="form-control"  type="text">
+                    <input name="AST" required placeholder="AST" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -129,7 +130,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="BIL" placeholder="BIL" class="form-control"  type="text">
+                    <input name="BIL" required placeholder="BIL" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -141,7 +142,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="CHE" placeholder="CHE" class="form-control"  type="text">
+                    <input name="CHE" required placeholder="CHE" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -153,20 +154,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="CHOL" placeholder="CHOL" class="form-control"  type="text">
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <!-- Text input-->
-                
-                <div class="form-group">
-                    <label class="col-md-4 control-label" ></label> 
-                      <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="CREA" placeholder="CREA" class="form-control"  type="text">
+                    <input name="CHOL" required placeholder="CHOL" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -179,7 +167,7 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="GGT" placeholder="GGT" class="form-control"  type="text">
+                    <input name="CREA" required placeholder="CREA" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -192,7 +180,20 @@
                       <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="PROT" placeholder="PROT" class="form-control"  type="text">
+                    <input name="GGT" required placeholder="GGT" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" ></label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="PROT" required placeholder="PROT" class="form-control"  type="text">
                       </div>
                     </div>
                   </div>
@@ -203,7 +204,7 @@
                 <!-- Text area -->
                   
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Description</label>
+                  <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -238,9 +239,9 @@
                     <!-- right sidebar-->
                     <div class="lg:w-5/12">
 
-                        <div class="bg-white  shadow-md rounded-md overflow-hidden">
+                        
 
-                            
+                      <div class="bg-white  shadow-md rounded-md overflow-hidden">
                             
 
                         </div>
