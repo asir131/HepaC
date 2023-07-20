@@ -26,6 +26,7 @@ def index(request):
         new_profile = Profile.objects.create(age=age,sex=sex,ALB=ALB,ALP=ALP,ALT=ALT,AST=AST,BIL=BIL,CHE=CHE,CHOL=CHOL,CREA=CREA,GGT=GGT,PROT=PROT,comment=comment)
         
         new_profile.save()
+        messages.info(request,'Data saved')  
         
         
 
